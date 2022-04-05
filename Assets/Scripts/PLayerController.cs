@@ -15,6 +15,7 @@ public class PLayerController : MonoBehaviour
     private float xRange = 16;
     private float yRange = 16;
 
+    
 
     void Start()
     {
@@ -35,20 +36,24 @@ public class PLayerController : MonoBehaviour
         // movimiento vertical del player
         transform.Translate(Vector3.forward * speed * Time.deltaTime * verticalInput);
 
-       /*
-        // limite de pantalla derecho 
-        if (transform.position.x > xRange)
-        {
-            transform.position = new Vector3(xRange, transform.position.y,
-                transform.position.z);
-        }
+        /*
+         // limite de pantalla derecho 
+         if (transform.position.x > xRange)
+         {
+             transform.position = new Vector3(xRange, transform.position.y,
+                 transform.position.z);
+         }
 
-        // limite pantalla izquierdo
-        if (transform.position.x < -xRange)
-        {
-            transform.position = new Vector3(-xRange, transform.position.y,
-                transform.position.z);
-        }
-       */
+         // limite pantalla izquierdo
+         if (transform.position.x < -xRange)
+         {
+             transform.position = new Vector3(-xRange, transform.position.y,
+                 transform.position.z);
+         }
+        */
+
+
+
+      
     }
 }
