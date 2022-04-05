@@ -26,10 +26,16 @@ public class PLayerController : MonoBehaviour
     {
        
         horizontalInput = Input.GetAxis("Horizontal");
-
         // movimiento horizontal del player
         transform.Translate(Vector3.right * speed * Time.deltaTime * horizontalInput);
 
+    
+
+        verticalInput = Input.GetAxis("Vertical");
+        // movimiento vertical del player
+        transform.Translate(Vector3.forward * speed * Time.deltaTime * verticalInput);
+
+       /*
         // limite de pantalla derecho (que lo determina xRange)
         if (transform.position.x > xRange)
         {
@@ -43,23 +49,6 @@ public class PLayerController : MonoBehaviour
             transform.position = new Vector3(-xRange, transform.position.y,
                 transform.position.z);
         }
-
-        verticalInput = Input.GetAxis("Vertical");
-
-        transform.Translate(Vector3.forward * speed * Time.deltaTime * verticalInput);
-
-        if (transform.position.y > yRange)
-        {
-            transform.position = new Vector3(transform.position.x, yRange,
-                transform.position.z);
-        }
-
-        // limite pantalla izquierdo
-        if (transform.position.y < -yRange)
-        {
-            transform.position = new Vector3(transform.position.x, -yRange,
-                transform.position.z);
-        }
-
+       */
     }
 }
