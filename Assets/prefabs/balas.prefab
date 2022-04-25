@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2357843905746048478}
   - component: {fileID: 2357843905746048479}
   - component: {fileID: 9138953026556170632}
+  - component: {fileID: -8889293276316924699}
   m_Layer: 0
   m_Name: balas
-  m_TagString: Untagged
+  m_TagString: proyectil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +92,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2357843905746048480}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -109,3 +110,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
+--- !u!114 &-8889293276316924699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2357843905746048480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6789270fa5afb6c4d9f3a04283964013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

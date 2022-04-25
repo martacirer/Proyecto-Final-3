@@ -8,6 +8,11 @@ public class RotateCamera : MonoBehaviour
 
     private float xRotation;
 
+    private float mouseX;
+    private float mouseY;
+
+    public Transform playerBody;
+
     void Start()
     {
         
@@ -16,6 +21,7 @@ public class RotateCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         float horizontalInputMouse = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
         transform.Rotate(Vector3.up  * horizontalInputMouse);
 
@@ -25,10 +31,17 @@ public class RotateCamera : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        */
 
 
+        mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
+        mouseY = Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
 
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90, 90);
 
+        playerBody.Rotate(Vector3.up * mouseX);
+        transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
 
     }

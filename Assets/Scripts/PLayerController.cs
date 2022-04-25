@@ -19,7 +19,8 @@ public class PLayerController : MonoBehaviour
 
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.None;
     }
 
 
