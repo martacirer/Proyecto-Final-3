@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2357843905746048476}
   - component: {fileID: 2357843905746048477}
   - component: {fileID: 2357843905746048478}
-  - component: {fileID: 2357843905746048479}
   - component: {fileID: 9138953026556170632}
   - component: {fileID: -8889293276316924699}
+  - component: {fileID: 3878354347167355641}
   m_Layer: 0
   m_Name: balas
   m_TagString: proyectil
@@ -84,19 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &2357843905746048479
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2357843905746048480}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9138953026556170632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,3 +109,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6789270fa5afb6c4d9f3a04283964013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &3878354347167355641
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2357843905746048480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5071896
+  m_Height: 2.0287583
+  m_Direction: 1
+  m_Center: {x: -0.0052694976, y: 0.005265549, z: 0.0045550615}

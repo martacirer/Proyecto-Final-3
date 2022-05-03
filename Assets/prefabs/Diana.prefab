@@ -91,7 +91,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 304850106289196645}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -124,7 +124,7 @@ Transform:
   m_GameObject: {fileID: 4150956307224209136}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1.1327285, y: 3.94, z: 7.701362}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.7186015, y: 3.7186015, z: 3.7186015}
   m_Children:
   - {fileID: 3634313303473284698}
   - {fileID: 8441803083261572785}
@@ -158,8 +158,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.101781756, z: 1}
+  m_Center: {x: 0, y: 0.008049158, z: 1.3085243e-17}
 --- !u!54 &7778523101290782967
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -267,7 +267,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 5705496930036783951}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -363,7 +363,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 7010113861634339008}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -459,7 +459,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 7097736490182211494}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -555,7 +555,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 7682258120898516234}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -651,7 +651,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 9148334764440110708}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1

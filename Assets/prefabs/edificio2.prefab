@@ -199,6 +199,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 375091578051037001}
+  - component: {fileID: 3987329991199155354}
+  - component: {fileID: -620650135446572227}
   m_Layer: 0
   m_Name: edificio2
   m_TagString: Untagged
@@ -226,6 +228,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3987329991199155354
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4547054910145175284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.966316, y: 29.190767, z: 23.956364}
+  m_Center: {x: -14.647543, y: -3.9904833, z: -7.283201}
+--- !u!54 &-620650135446572227
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4547054910145175284}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &6340036629202117098
 GameObject:
   m_ObjectHideFlags: 0

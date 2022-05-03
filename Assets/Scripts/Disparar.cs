@@ -14,7 +14,7 @@ public class Disparar : MonoBehaviour
         //disparar
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Instantiate(projectilePrefab, transform.position, transform.rotation);
+            Instantiate(projectilePrefab, transform.position, transform.rotation); // instanciar proyectil en una posición determinada
         }
     }
 }
