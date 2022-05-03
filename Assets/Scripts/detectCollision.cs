@@ -22,9 +22,9 @@ public class detectCollision : MonoBehaviour
         {
             float d = Vector3.Distance(otherCollider.gameObject.transform.position, 
                 transform.position); //calcula distancia entre bala y centro de diana
-            Debug.Log(d);
-            Debug.Log(otherCollider.gameObject.transform.position);// calcula posicion del gameoibject
-            Debug.Log(GetComponent<BoxCollider>().center); // calcula centro del boxcollider
+            //Debug.Log(d);
+            //Debug.Log(otherCollider.gameObject.transform.position);// calcula posicion del gameoibject
+            //Debug.Log(GetComponent<BoxCollider>().center); // calcula centro del boxcollider
             Destroy(otherCollider.gameObject);// destruye objecto cuando choca
             Destroy(gameObject);// destruye objecto
             Debug.Log($"+1"); // cuando choca suma 1
