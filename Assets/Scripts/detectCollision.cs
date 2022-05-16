@@ -8,6 +8,7 @@ public class detectCollision : MonoBehaviour
 {
 
     private GameManager GameManagerScript;
+    public ParticleSystem explosionParticleSystem;
 
     private void Start()
     {
@@ -29,6 +30,9 @@ public class detectCollision : MonoBehaviour
             Destroy(gameObject);// destruye objecto
             Debug.Log($"+1"); // cuando choca suma 1
             GameManagerScript.contador();// accede al contador del scrpit GameManager
+            Instantiate(explosionParticleSystem,
+                transform.position,
+                explosionParticleSystem.transform.rotation);
         }
     }
 }

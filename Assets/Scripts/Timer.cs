@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class Timer : MonoBehaviour
@@ -28,7 +29,7 @@ public class Timer : MonoBehaviour
             if (restante < 1)
             {
                 enMarcha = true;
-                 //matar el player
+                //matar el player
             }
         }
         int tempMin = Mathf.FloorToInt(restante / 60);

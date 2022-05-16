@@ -5,8 +5,6 @@ using UnityEngine;
 public class Disparar : MonoBehaviour
 {
     public GameObject projectilePrefab;
-   
-
 
     // Update is called once per frame
     void Update()
