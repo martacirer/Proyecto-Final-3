@@ -28,7 +28,10 @@ public class Timer : MonoBehaviour
             restante -= Time.deltaTime;
             if (restante < 1)
             {
-                enMarcha = true;
+                enMarcha = false;
+                Debug.Log("game over");
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene("Gameover");
                 //matar el player
             }
         }

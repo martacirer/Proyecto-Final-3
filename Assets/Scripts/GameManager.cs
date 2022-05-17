@@ -10,8 +10,6 @@ public class GameManager : MonoBehaviour
     public int Score = 0;
 
 
-
-
     public void contador()
     {
         Score++; // suma 1
