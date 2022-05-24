@@ -6,10 +6,6 @@ using UnityEngine;
 public class PLayerController : MonoBehaviour
 {
 
-    
-
-   
-
     public float speed = 10f;
 
     private float xRange = 16;
