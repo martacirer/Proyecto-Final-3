@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public int Score = 0;
 
     public static GameManager sharedInstance;
-    public TextMeshProUGUI username;
+  
 
     private void Awake()
     {
@@ -25,21 +25,17 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
     }
-    void Start()
+ 
+    public void contador(int p)
     {
-        //Aplicamos las opciones que hemos cambiado en el menu
-        ApplyOptions();
-    }
-    public void contador()
-    {
-        Score++; // suma 1
+        Score+= p; // suma 1
         pointText.text = $"Score: {Score}";// puntuación
     }
-    public void ApplyOptions()
-    {
-        //Data persistance de las opiones
-        username.text = DataPersistance.sharedInstance.username;
 
+    public void saveContador()
+    {
+        DataPersistance.score = Score;
     }
+
 
 }

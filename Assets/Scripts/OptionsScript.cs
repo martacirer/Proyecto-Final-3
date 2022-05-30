@@ -16,10 +16,10 @@ public class OptionsScript : MonoBehaviour
     public void SaveUserOptions()
     {
         //Persistencia de datos entre escenas
-        DataPersistance.sharedInstance.username = username.text;
+        DataPersistance.username = username.text;
 
         //Persistencia de datos entre partidas
-        DataPersistance.sharedInstance.SaveForFutureGames();
+        PlayerPrefs.SetString("USERNAME", username.text);
     }
     public void LoadUserOptions()
     {

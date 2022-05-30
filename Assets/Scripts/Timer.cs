@@ -31,6 +31,7 @@ public class Timer : MonoBehaviour
                 enMarcha = false;
                 Debug.Log("game over");
                 Cursor.lockState = CursorLockMode.None;
+                GameManager.sharedInstance.saveContador();
                 SceneManager.LoadScene("Gameover");
                 //matar el player
             }
