@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 375091578051037001}
   - component: {fileID: 3987329991199155354}
   - component: {fileID: -620650135446572227}
+  - component: {fileID: 5439580510480054171}
   m_Layer: 0
   m_Name: edificio2
   m_TagString: Untagged
@@ -236,7 +237,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4547054910145175284}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 9.966316, y: 29.190767, z: 23.956364}
@@ -257,6 +258,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &5439580510480054171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4547054910145175284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd269ed0e250ad46b9e8103ce072d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6340036629202117098
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     [SerializeField] Text tiempo;
 
 
-    private float restante;
+    public float restante;
     private bool enMarcha;
     private void Awake()
     {
