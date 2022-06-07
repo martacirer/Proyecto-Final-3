@@ -8,9 +8,6 @@ public class PLayerController : MonoBehaviour
 
     public float speed = 10f;
 
-    private float xRange = 16;
-    private float yRange = 16;
-
     private Rigidbody playerRigidbody;
 
 
@@ -21,27 +18,26 @@ public class PLayerController : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;//Se oculta el raton
     }
 
 
 
-    void Update()
+    void FixedUpdate()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        horizontalInput = Input.GetAxis("Horizontal");
-        // movimiento horizontal del player
+       
+        //Movimiento horizontal del player
         playerRigidbody.AddForce(playerRigidbody.gameObject.transform.right * speed * horizontalInput);
        
 
 
 
 
-        verticalInput = Input.GetAxis("Vertical");
-        // movimiento vertical del player
+       
+        //Movimiento vertical del player
         playerRigidbody.AddForce(playerRigidbody.gameObject.transform.forward * speed * verticalInput);
       
     }

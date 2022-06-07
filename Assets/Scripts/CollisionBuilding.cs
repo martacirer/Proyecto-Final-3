@@ -7,16 +7,15 @@ public class CollisionBuilding : MonoBehaviour
     private GameManager GameManagerScript;
     void Start()
     {
-        GameManagerScript = FindObjectOfType<GameManager>(); // encuentra el script
+        GameManagerScript = FindObjectOfType<GameManager>(); //Encuentra el script Game Manager
     }
 
-    // Update is called once per frame
     private void OnTriggerEnter(Collider otherCollider)
     {
         if (otherCollider.gameObject.CompareTag("proyectil"))
         {
             
-            Destroy(otherCollider.gameObject);// destruye objecto cuando choca
+            Destroy(otherCollider.gameObject);//Destruye objecto cuando choca
 
         }
     }

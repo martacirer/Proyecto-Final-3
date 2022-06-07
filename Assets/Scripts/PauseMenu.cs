@@ -12,10 +12,12 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Si pulsamos la tecla Esc se activa el panel de Pause
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
             {
+                //Si ya esta pausado, se reanuda el juego
                 Resume();
             }
             else
@@ -26,19 +28,17 @@ public class PauseMenu : MonoBehaviour
     }
    public void Resume()
     {
-        PauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        PauseMenuUI.SetActive(false);//Se oculta el panel
+        Time.timeScale = 1f;//Se reanuda el tiempo
+        GameIsPaused = false;//Variable booleana igual a false
+        Cursor.lockState = CursorLockMode.Locked;//Se oculta el raton
     }
     
     void Pause()
     {
-        PauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-        Cursor.lockState = CursorLockMode.None;
+        PauseMenuUI.SetActive(true);//Se muestra el panel
+        Time.timeScale = 0f;//Se para el tiempo
+        GameIsPaused = true;//Variable booleana igual a true
+        Cursor.lockState = CursorLockMode.None;//Se muestra el raton 
     }
-
-    
 }

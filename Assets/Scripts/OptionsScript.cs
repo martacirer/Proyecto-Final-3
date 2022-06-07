@@ -8,9 +8,10 @@ public class OptionsScript : MonoBehaviour
 {
     public GameObject optionsPanel;
     public TMP_InputField username;
-    // Start is called before the first frame update
+
     void Start()
     {
+        //Obtiene las opciones guardadas
         LoadUserOptions();
     }
     public void SaveUserOptions()

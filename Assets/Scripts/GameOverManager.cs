@@ -7,8 +7,6 @@ using TMPro;
 public class GameOverManager : MonoBehaviour
 {
     public TextMeshProUGUI pointText;
-    
-
     public static GameOverManager sharedInstance;
     public TextMeshProUGUI username;
 
@@ -34,7 +32,7 @@ public class GameOverManager : MonoBehaviour
     public void ApplyOptions()
     {
         Debug.Log(DataPersistance.username);
-        //Data persistance de las opiones
+        //Data persistance de las opciones
         username.text = DataPersistance.username;
         pointText.text = DataPersistance.score.ToString();
 

@@ -7,6 +7,7 @@ public class optionsmenu : MonoBehaviour
 {
     public void GoToMainScene()
     {
+        //Carga la escena principal
         SceneManager.LoadScene("Main Menu");
     }
 }

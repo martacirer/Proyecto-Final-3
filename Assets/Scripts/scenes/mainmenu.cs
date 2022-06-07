@@ -7,19 +7,18 @@ public class mainmenu : MonoBehaviour
 {
     public void GoToScene(string sceneName)
     {
-        // Cargamos la escena que tenga por nombre sceneName
+        //Cargamos la escena que tenga por nombre sceneName
         SceneManager.LoadScene(sceneName);
     }
 
     public void Quit()
     {
-        // Si estamos haciendo pruebas en el editor
-#if UNITY_EDITOR
-        // Salimos del editor
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+        //Si estamos haciendo pruebas en el editor
 
-        // Salimos de la aplicación (solo funcionará en la Build)
+        //Salimos del editor
+        UnityEditor.EditorApplication.isPlaying = false;
+
+        //Salimos de la aplicación (solo funcionará en la Build)
         Application.Quit();
     }
 }

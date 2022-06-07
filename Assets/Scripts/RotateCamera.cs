@@ -13,17 +13,9 @@ public class RotateCamera : MonoBehaviour
 
     public Transform playerBody;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-     
-
-        // rotación de la cmara con el ratón
+        //Rotación de la camara con el ratón
         mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
         mouseY = Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
 

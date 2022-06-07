@@ -23,9 +23,7 @@ public class detectCollision : MonoBehaviour
         {
             float d = Vector3.Distance(otherCollider.gameObject.transform.position, 
                 transform.position); //calcula distancia entre bala y centro de diana
-            //Debug.Log(d);
-            //Debug.Log(otherCollider.gameObject.transform.position);// calcula posicion del gameoibject
-            //Debug.Log(GetComponent<BoxCollider>().center); // calcula centro del boxcollider
+            //Dependiendo de la distancia de la bala al centro de la diana, se sumaran diferentes puntos
             if (d < 0.5f)
             {
                 GameManager.sharedInstance.contador(3);
@@ -38,13 +36,12 @@ public class detectCollision : MonoBehaviour
             {
                 GameManager.sharedInstance.contador(1);
             }
-            Destroy(otherCollider.gameObject);// destruye objecto cuando choca
-            Destroy(gameObject);// destruye objecto
-            Debug.Log($"+1"); // cuando choca suma 1
-           // GameManagerScript.contador();// accede al contador del scrpit GameManager
+            Destroy(otherCollider.gameObject);//Destruye objecto cuando choca
+            Destroy(gameObject);//Destruye objecto
+            Debug.Log($"+1"); //Cuando choca suma 1
             Instantiate(explosionParticleSystem,
                 transform.position,
-                explosionParticleSystem.transform.rotation);
+                explosionParticleSystem.transform.rotation); //Se instancian las particulas
         }
     }
 }

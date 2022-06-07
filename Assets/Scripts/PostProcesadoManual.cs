@@ -11,17 +11,16 @@ public class PostProcesadoManual : MonoBehaviour
     private Timer timerscript;
 
 
-    // Start is called before the first frame update
+
     void Start()
     {
         volume = GetComponent<Volume>();
-        timerscript = FindObjectOfType<Timer>();
+        timerscript = FindObjectOfType<Timer>();//Buscamos el script Timer
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (timerscript.restante <= 10)
+        if (timerscript.restante <= 10)//Cuando quedan 10 segundos se activa este efecto
         {
             if (volume.profile.TryGet<Bloom>(out var bloom))
             {
@@ -36,7 +35,8 @@ public class PostProcesadoManual : MonoBehaviour
                 bloom.active = false;
             }
         }
-        if (timerscript.restante <= 5)
+
+        if (timerscript.restante <= 5)//Cuando quedan 5 segundos se activa este efecto
         {
             if (volume.profile.TryGet<Vignette>(out var vignette))
             {

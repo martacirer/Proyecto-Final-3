@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void saveContador()
     {
-        DataPersistance.score = Score;
+        DataPersistance.score = Score;//Al acabarse el tiempo se guarda la puntuacion
     }
 
 
