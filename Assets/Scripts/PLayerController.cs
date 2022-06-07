@@ -32,11 +32,6 @@ public class PLayerController : MonoBehaviour
         //Movimiento horizontal del player
         playerRigidbody.AddForce(playerRigidbody.gameObject.transform.right * speed * horizontalInput);
        
-
-
-
-
-       
         //Movimiento vertical del player
         playerRigidbody.AddForce(playerRigidbody.gameObject.transform.forward * speed * verticalInput);
       

@@ -1651,7 +1651,7 @@ GameObject:
   - component: {fileID: 1605392455}
   - component: {fileID: 1605392454}
   m_Layer: 5
-  m_Name: f
+  m_Name: ImagenFondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
